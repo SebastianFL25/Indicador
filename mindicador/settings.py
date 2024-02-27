@@ -98,6 +98,17 @@ DATABASES = {
     }
 }
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': 'unidades',
+#         'USER': 'sebas',
+#         'PASSWORD': '',
+#         'HOST': 'localhost',
+#         'PORT': '5432',  # El puerto por defecto de PostgreSQL es 5432
+#     }
+# }
+
 
 # Password validation
 # https://docs.djangoproject.com/en/4.1/ref/settings/#auth-password-validators
