@@ -13,53 +13,53 @@ And many more..
 
 # Installation
 
-#####Open your terminal and go to your development folders and create a folder with the name you prefer
+##### Open your terminal and go to your development folders and create a folder with the name you prefer
 
-####Clone the repository
+#### Clone the repository
 
 `git clone https://github.com/SebastianFL25/Indicador.git`
 
 `git clone git@github.com:SebastianFL25/Indicador.git`
 
-####Activate the virtual environment
+#### Activate the virtual environment
 In Mac or Linux
 `$ source env/bin/activate`
 
 In Windows
 `$ env\Scripts\activate.`
 
-##Start the project in docker
+## Start the project in docker
 
-###Active your postgrest
+### Active your postgrest
 
-#####If you don't have docker you can install it in
-#####[Docker](https://www.docker.com/ "Docker")
+##### If you don't have docker you can install it in
+##### [Docker](https://www.docker.com/ "Docker")
 
 ####Activate docker from the app
 
-#####In your directory in the cloned repository run:
+##### In your directory in the cloned repository run:
 `docker-compose up`
 
-####Wait for the process to finish, for everything to load and django to start running, cut the project by pressing: 
+#### Wait for the process to finish, for everything to load and django to start running, cut the project by pressing: 
 
 `ctrl c`
 
-#####And you execute
+##### And you execute
 
     docker-compose run web python manage.py makemigrations
-#####Then
+##### Then
 
     docker-compose run web python manage.py migrate
 
-#####And finally you raise the docker compose again
+##### And finally you raise the docker compose again
 
 `docker-compose up`
 
-#Using mindicator
+# Using mindicator
 
-####Open postman or your browser and active postgrest
+#### Open postman or your browser and active postgrest
 
-#####First you need to create a user in
+##### First you need to create a user in
 	
     http://0.0.0.0:8000/users/create/
     
@@ -70,7 +70,7 @@ In Windows
     email=your_email
 	
 
-#####Log in with your user
+##### Log in with your user
 
     http://0.0.0.0:8000/users/login/
     
@@ -83,7 +83,7 @@ In Windows
 	
 They will return a token to access the views and one to refresh the token when the access token expires.
 
-####Para utilizar la vista de obtener tokens por mes y fecha especifica 
+#### Para utilizar la vista de obtener tokens por mes y fecha especifica 
 
     http://0.0.0.0:8000/unit/obtent/
     
@@ -109,7 +109,7 @@ They will return a token to access the views and one to refresh the token when t
     
 It should be noted that if you have already searched for the data, when you call it again it will only be displayed and it will not be saved in the database again.
 
-####To see the data stored or that we are already looking for, we can use the url
+#### To see the data stored or that we are already looking for, we can use the url
 
     http://0.0.0.0:8000/unit/list/
     
@@ -132,7 +132,7 @@ It should be noted that if you have already searched for the data, when you call
     start_date=2024-2-1
     end_date=2024-2-6
     
-####Finally, to refresh the token_acce you must search for your refresh_token and send it to the url
+#### Finally, to refresh the token_acce you must search for your refresh_token and send it to the url
 
     http://0.0.0.0:8000/users/refresh/
     
