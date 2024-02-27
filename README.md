@@ -35,7 +35,7 @@ In Windows
 ##### If you don't have docker you can install it in
 ##### [Docker](https://www.docker.com/ "Docker")
 
-####Activate docker from the app
+#### Activate docker from the app
 
 ##### In your directory in the cloned repository run:
 `docker-compose up`
