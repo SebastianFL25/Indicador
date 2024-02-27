@@ -1,0 +1,16 @@
+#Virtual enviroment
+env/
+#base
+base/migrations
+base/__pycache__
+base/api/__pycache__
+#microserviciouf
+mindicador/__pycache__
+microsmindicadorerviciouf/settings/__pycache__
+#uf
+unit/__pycache__
+unit/migrations
+unit/api/__pycache__
+#database
+data/
+
